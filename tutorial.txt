@@ -1,0 +1,7 @@
+git --version
+
+git -init (to make a normal direcftory , a git directory)
+
+git status (to check status of a git repo)
+
+first do staging , then commit.
