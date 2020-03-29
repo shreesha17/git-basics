@@ -5,3 +5,23 @@ git -init (to make a normal direcftory , a git directory)
 git status (to check status of a git repo)
 
 first do staging , then commit.
+
+git add . (all files move from working directory to staging area.)
+
+do commit to save the file
+
+git commit -m "type message here"
+git commit -m "version 1"
+$ git commit -m "version 1"
+[master (root-commit) 3b73200] version 1
+ 3 files changed, 9 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 tutorial.txt
+ create mode 100644 utility.html
+
+
+do this at the beginning
+git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+$ git config --global user.email "malladiedits@gmail.com"
+$ git config --global user.name "shreesha"
