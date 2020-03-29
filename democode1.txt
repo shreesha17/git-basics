@@ -1,0 +1,206 @@
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut
+$ git init
+Initialized empty Git repository in C:/Users/Rajath/Desktop/git tut/.git/
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ touch index.html
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ index.html
+bash: index.html: command not found
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ notepad index.html
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ touch utility.html
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ notepad utility.html
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+        utility.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ git add .
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+        new file:   tutorial.txt
+        new file:   utility.html
+
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ git commit -m "version 1"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Rajath@Rajath-PC.(none)')
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ git config --global user.email "malladiedits@gmail.com"
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ ^C
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+        new file:   tutorial.txt
+        new file:   utility.html
+
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ git commit -m "version 1"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <malladiedits@gmail.com>) not allowed
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ ^C
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ git config --global user.name "shreesha"
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ git config --global user.email "malladiedits@gmail.com"
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ git commit -m "version 1"
+[master (root-commit) 3b73200] version 1
+ 3 files changed, 9 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 tutorial.txt
+ create mode 100644 utility.html
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ ^C
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ ^C
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ ^C
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ git log
+commit 3b732009d76773ae6fc8404e5d48f99bb985b9c4 (HEAD -> master)
+Author: shreesha <malladiedits@gmail.com>
+Date:   Sun Mar 29 13:09:44 2020 +0530
+
+    version 1
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ ^C
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ notepad index.html
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ notepad utility.html
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+        modified:   tutorial.txt
+        modified:   utility.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ git add .
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ git commit -m "version 2"
+[master d8a1df1] version 2
+ 3 files changed, 26 insertions(+), 3 deletions(-)
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ git log
+commit d8a1df1f029f677b521cbc8b3b4a78a9cc3d0bae (HEAD -> master)
+Author: shreesha <malladiedits@gmail.com>
+Date:   Sun Mar 29 13:42:05 2020 +0530
+
+    version 2
+
+commit 3b732009d76773ae6fc8404e5d48f99bb985b9c4
+Author: shreesha <malladiedits@gmail.com>
+Date:   Sun Mar 29 13:09:44 2020 +0530
+
+    version 1
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$

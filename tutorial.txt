@@ -11,6 +11,9 @@ git add . (all files move from working directory to staging area.)
 do commit to save the file
 
 git commit -m "type message here"
+always write comjkit messages in  a meaningful way so that other collaboraters can read it and understand it 
+
+
 git commit -m "version 1"
 $ git commit -m "version 1"
 [master (root-commit) 3b73200] version 1
@@ -25,3 +28,17 @@ git config --global user.email "you@example.com"
   git config --global user.name "Your Name"
 $ git config --global user.email "malladiedits@gmail.com"
 $ git config --global user.name "shreesha"
+
+to observe the changes in the code and who has made it 
+git log 
+commit 3b732009d76773ae6fc8404e5d48f99bb985b9c4 (HEAD -> master)
+Author: shreesha <malladiedits@gmail.com>
+Date:   Sun Mar 29 13:09:44 2020 +0530
+
+    version 1
+
+clear to clear screen
+
+
+three layer architecture
+working area --> staging --> commit
