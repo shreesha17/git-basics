@@ -35,6 +35,11 @@ commit 3b732009d76773ae6fc8404e5d48f99bb985b9c4 (HEAD -> master)
 Author: shreesha <malladiedits@gmail.com>
 Date:   Sun Mar 29 13:09:44 2020 +0530
 
+origin is added to store the code in remote website
+
+
+
+
     version 1
 
 clear to clear screen
