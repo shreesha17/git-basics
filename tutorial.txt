@@ -47,4 +47,24 @@ clear to clear screen
 
 
 three layer architecture
+
+
 working area --> staging --> commit
+
+
+
+
+add remote origin line to connect our code to cloud websites
+
+then add ssh fingerprint 
+1--->go to github settings -->ssh and fingerprint --> then genetraete new one
+it has 3-4 commands
+copy paste it in the git and execute that
+generate key and copy it and paste it in  github website
+and save it.
+
+to push code to website
+git push origin master
+
+to pull code from website
+git pull origin master
