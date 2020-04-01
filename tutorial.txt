@@ -67,4 +67,8 @@ to push code to website
 git push -u origin master
 
 to pull code from website
-git pull origin master
+git pull origin  master (try it)
+
+to see what changes are made in new commit and see the difference betweeeen the commits--
+git diff filename
+git difff tutorial.txt
