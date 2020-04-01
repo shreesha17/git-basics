@@ -64,7 +64,7 @@ generate key and copy it and paste it in  github website
 and save it.
 
 to push code to website
-git push origin master
+git push -u origin master
 
 to pull code from website
 git pull origin master
