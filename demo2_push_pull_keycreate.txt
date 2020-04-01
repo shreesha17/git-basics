@@ -1,0 +1,241 @@
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ tree
+bash: tree: command not found
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ git remote add origin git@github.com:shreesha17/git-tutorial-codewithharry.git
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   tutorial.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ git push -u origin master
+The authenticity of host 'github.com (13.234.210.38)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com,13.234.210.38' (RSA) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ $ git config --global user.email "malladiedits@gmail.com"
+bash: $: command not found
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ $ git config --global user.name "shreesha"
+bash: $: command not found
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$  git config --global user.name "shreesha"
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$  git config --global user.name "shreesha"
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ git push -u origin master
+Warning: Permanently added the RSA host key for IP address '13.234.176.102' to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$  git config --global user.email "malladiedits@gmail.com"
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ git push -u origin master
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$  ssh-keygen -t rsa -b 4096 -C "malladiedits@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/Rajath/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/Rajath/.ssh/id_rsa
+Your public key has been saved in /c/Users/Rajath/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:tx9Zblk9/fNCYoaNFyEV8IHphX+n6lZfeiPdSsa5xEA malladiedits@gmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|          .*+.   |
+|          =.o.   |
+|         . +E.   |
+|          ..o . +|
+|        S .+.o.++|
+|         .o.*B+++|
+|          .+o=%++|
+|           .oBo+*|
+|           oo ++o|
++----[SHA256]-----+
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ eval $(ssh-agent -s)
+Agent pid 1336
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ ssh-add ~/.ssh/id_rsa
+Identity added: /c/Users/Rajath/.ssh/id_rsa (malladiedits@gmail.com)
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ clip < ~/.ssh/id_rsa.pub
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ git push -u origin master
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (14/14), 2.78 KiB | 406.00 KiB/s, done.
+Total 14 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To github.com:shreesha17/git-tutorial-codewithharry.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ notepad utility.html
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   tutorial.txt
+        modified:   utility.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ git commit -m "updated version 3"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   tutorial.txt
+        modified:   utility.html
+
+commit 41cea8a6f4edfef4ad3b2fd9b3098a48acaa5684 (HEAD -> master, origin/master)
+Author: shreesha <malladiedits@gmail.com>
+Date:   Tue Mar 31 17:47:08 2020 +0530
+
+    updated version 3
+
+commit be6448d7b5acd03a49419a238e58e7f12bc8ea45
+Author: shreesha <malladiedits@gmail.com>
+Date:   Sun Mar 29 14:00:45 2020 +0530
+
+    updated tutorial by adding new things about git and added democode file which has every commond run by me today till now
+
+commit d8a1df1f029f677b521cbc8b3b4a78a9cc3d0bae
+Author: shreesha <malladiedits@gmail.com>
+Date:   Sun Mar 29 13:42:05 2020 +0530
+
+    version 2
+
+commit 3b732009d76773ae6fc8404e5d48f99bb985b9c4
+Author: shreesha <malladiedits@gmail.com>
+Date:   Sun Mar 29 13:09:44 2020 +0530
+
+    version 1
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ git pull origin master
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 676 bytes | 4.00 KiB/s, done.
+From github.com:shreesha17/git-tutorial-codewithharry
+ * branch            master     -> FETCH_HEAD
+   41cea8a..b90c998  master     -> origin/master
+Updating 41cea8a..b90c998
+Fast-forward
+ utility.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$ git log
+commit b90c9987a5e2cc89d533e4bdaa316de1950561a6 (HEAD -> master, origin/master)
+Author: Shreesha M G <48647698+shreesha17@users.noreply.github.com>
+Date:   Tue Mar 31 17:52:22 2020 +0530
+
+    updated in github website
+
+commit 41cea8a6f4edfef4ad3b2fd9b3098a48acaa5684
+Author: shreesha <malladiedits@gmail.com>
+Date:   Tue Mar 31 17:47:08 2020 +0530
+
+    updated version 3
+
+commit be6448d7b5acd03a49419a238e58e7f12bc8ea45
+Author: shreesha <malladiedits@gmail.com>
+Date:   Sun Mar 29 14:00:45 2020 +0530
+
+    updated tutorial by adding new things about git and added democode file which has every commond run by me today till now
+
+commit d8a1df1f029f677b521cbc8b3b4a78a9cc3d0bae
+Author: shreesha <malladiedits@gmail.com>
+Date:   Sun Mar 29 13:42:05 2020 +0530
+
+    version 2
+
+commit 3b732009d76773ae6fc8404e5d48f99bb985b9c4
+Author: shreesha <malladiedits@gmail.com>
+Date:   Sun Mar 29 13:09:44 2020 +0530
+
+    version 1
+
+Rajath@Rajath-PC MINGW64 ~/Desktop/git tut (master)
+$
