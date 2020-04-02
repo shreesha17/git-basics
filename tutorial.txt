@@ -35,6 +35,8 @@ commit 3b732009d76773ae6fc8404e5d48f99bb985b9c4 (HEAD -> master)
 Author: shreesha <malladiedits@gmail.com>
 Date:   Sun Mar 29 13:09:44 2020 +0530
 
+
+
 origin is added to store the code in remote website
 
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDZPM9HiCWs8zL5V0WhJGnyDIPECXCV4n0mN/zGWF00lFXc1NDm6Js93xMbp2HwuBevfE3Qgn6MaL9nJ7J2V5LB9jaib1XWl2n/vzml2nLrwXut5nVYPJULWD/Y+0M2/xzPMUX/ss/q0Ak5uoJ43RHSDGpDZ1gsBTOK6udmcaG36uM6Fz88ymojSJR0K7U4n+W7ZFUgFrVAkSR+c+uLkfUAWWnZ/e4+T0fQ9NvHl5nE/QTFpZ79YO5Yq8NDsm6ZaeYRfIMFwm16e1JHUs/s9fRBjC/8znasKPXwSPmXa5xZrvAm52Ut+07yqB/OvQy0cnDQOUiCALcDsgDU6SPnLb3HxgMHgih8uV75SCj6K3oEN0tU3mj7MeDEe4f+VG9r3tqxEt62OHo6OI5psm+EGJCpZHgJfkdewbr8j8U5dJCYDlxkEuisahqpGPzVcUdDYuKRQu1Zh+T0exF+M4FwcQ+sYsLS/PjGo0j3iqZb+pwp5LKRxN2k+iTF3LkQE1J4m4e3Ndn0jz1LkAin3j8tv78AwuM1HQNWVlgrLpkfkmKZqaI4jwW0xq0f8fuNtR0kWciOwItxpjzEYIuhXzZDf4I4Od5RRiMspvFL6Z47DCQm0wIjELBYh/Ge/wMSq4sTVmTAtprzvmH5Doq/Wlz73g17uXPD1MjOgdxRsPEaem3DPw== malladiedits@gmail.com
@@ -81,3 +83,48 @@ to see changes in the staged file
 to get back the work to last commit,means rollback
 git reset tutorial.txt
 git checkout tutorial.txt
+
+git checkout .
+this cmd will unstage every file in the dir.
+
+
+git add -A (stages all)
+git add . (stages new and modified files) WITHOUT deleted
+git add -u (stages modified and deleted files,without new files)
+
+
+to clone a directory / to download a repositary from someone elses github account
+go to their repositary and go to clone or downlkoad and copy ssh key
+then create a folder in computer right clivck and open gitr bash and type git clone and paste that key.
+git clone git@github.com:shreesha17/git-tutorial-codewithharry.git (to create new folder and paste files there)
+git clone git@github.com:shreesha17/git-tutorial-codewithharry.git . (to paste in same dir)
+
+if there are many files in the repositary , and it it uploades in github .u dont want to track the changes to some files , the size may be large ,orany other reasons ,, then store those filenames in gitignore file in the repo.so that u wont get notified or wont be able to track changes to the files.
+
+
+by default the branch is master.
+if u are modifying some files and it may be damngerous ,or original file mauy be lost or giving access to some othres to work on your files.then create another branch and then merge that branch to master and update code.
+
+
+to check the avialable branches
+git branch
+
+git branch login-system
+new login-system named branch gets creatd which contains copy of all files of master branch.
+
+to change the branch
+git checkout login-system
+
+to merge changes in login-sytem to master the,
+git merge login-system
+s
+t hen push the code,
+git push -u origin master
+
+ 
+once the branches are merged ,then that branch has redudndent data.
+to delete that branch--on local machine
+git branch -d login-system
+
+to delete branch on remote loxcation
+git push origin --delelte  login-system
